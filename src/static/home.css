@@ -1,0 +1,8 @@
+body{
+    background-image: url("Personeria.jpeg");
+    background-size:cover;
+}
+p.nameProyect {
+    color: #1694bb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
