@@ -1,6 +1,5 @@
 flask
 nltk==3.4
-spacy
 numpy
 pandas
 sklearn
@@ -9,6 +8,4 @@ scikit-learn
 wheel
 wordcloud
 xlrd
-PyDrive
-google-colab
 dataframe-image

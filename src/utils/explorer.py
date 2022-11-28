@@ -154,6 +154,8 @@ class explorer():
             col="ano_inicio",
             data=df_atenciones_top_year, kind="bar",
             height=8, aspect=.7)
+        plt.xlabel('Frecuencia')
+        plt.ylabel('Trigrama')
         fig.patch.set_facecolor('#F0F0F0')
         plt.tight_layout(pad=0.1)
         buffer = BytesIO()
@@ -276,7 +278,7 @@ class explorer():
             .sort_values('dia_inicio', ascending=False) \
             .head(10)
         plt.show()
-        fig = plt.figure(figsize=(10,5))
+        fig = plt.figure(figsize=(20,5))
         sns.barplot(x='dia_inicio', y='ngram', data=df_top_unique_days, orient='h')
         plt.title('Top Trigramas para 14 y 15/11/2020')
         plt.xlabel('Menciones')
