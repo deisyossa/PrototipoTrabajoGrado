@@ -41,7 +41,6 @@ class explorer():
         self.df_atenciones['observaciones'] = self.df_atenciones['observaciones'].astype(str)
         self.stopwords_es = stopwords
         
-
     def clean_text(self, tweet):
         """
         Excluye menciones, emails, URLs y simbolos
@@ -449,7 +448,7 @@ class explorer():
         for i in range(1,n_topics+1):    
             plt.subplot(3,2,i,frameon=True)
             sns.barplot(x='score', y='bigrams', data=df_topics[df_topics['topic']==i-1], orient='h')
-            plt.title("Topico {}".format(i))
+            plt.title("Tópico {}".format(i))
             plt.xlabel('')
             plt.ylabel('')
             plt.tight_layout()
